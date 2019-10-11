@@ -3,3 +3,4 @@ yarn-error.log
 lib
 .merlin
 .bsb.lock
+*.bs.js
