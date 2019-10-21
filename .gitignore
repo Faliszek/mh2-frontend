@@ -1,6 +1,8 @@
 node_modules
 yarn-error.log
 lib
+dist
 .merlin
 .bsb.lock
 *.bs.js
+.graphql_ppx_cache

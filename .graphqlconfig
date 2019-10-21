@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "mh2-frontend": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "dev": {
+            "url": "http://localhost:6789/graphql"
+          }
+        }
+      }
+    }
+  }
+}

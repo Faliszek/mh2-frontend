@@ -1,0 +1,35 @@
+schema {
+  query: query
+  mutation: mutation
+}
+
+enum AuthenticateResponseError {
+  # Invalid email error
+  INVALID_CREDENTIALS
+}
+
+# Login auth result
+type LoginResponse {
+  result: LoginResult
+  errors: [AuthenticateResponseError!]
+}
+
+type LoginResult {
+  token: String!
+}
+
+type mutation {
+  login(password: String!, email: String!): LoginResponse!
+}
+
+type query {
+  users: [user!]!
+}
+
+# A user in the system
+type user {
+  # Unique user identifier
+  id: String!
+  email: String!
+}
+
