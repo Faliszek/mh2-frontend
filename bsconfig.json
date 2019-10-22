@@ -3,6 +3,7 @@
   "reason": {
     "react-jsx": 3
   },
+  "bsc-flags": ["-open Belt"],
   "sources": {
     "dir": "src",
     "subdirs": true

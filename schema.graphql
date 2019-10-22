@@ -24,6 +24,7 @@ type mutation {
 
 type query {
   users: [user!]!
+  user(id: String!): user
 }
 
 # A user in the system

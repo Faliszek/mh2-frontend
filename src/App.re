@@ -1,9 +1,24 @@
 [@react.component]
 let make = () => {
-  React.useEffect0(() => {
-    Users_Query.query();
-    None;
-  });
+  let users = Users_Query.use();
 
-  <div> "Hello15"->React.string </div>;
+  let user = User_Query.use(~id="1", ());
+
+  // switch (users) {
+  // | {data: Some(data)} =>
+  //   <div>
+  //     {data##users->Array.map(u => u##id->React.string)->React.array}
+  //   </div>
+  // | {loading: true} => <div> "loading"->React.string </div>
+  // | {error: Some(error), _} => <div> error->React.string </div>
+  // | _ => React.null
+  // };
+
+  switch (user) {
+  | {data: Some(data)} =>
+    data##user
+    ->Option.map(u => u##id->React.string)
+    ->Option.getWithDefault(React.null)
+  | _ => React.null
+  };
 };
