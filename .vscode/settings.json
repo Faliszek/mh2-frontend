@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "lib": true,
+    ".graphql_ppx_cache": true,
+    "node_modules": true,
+    "**/.DS_Store": true,
+    "**/*.bs.js": true
+  },
+  "reason_language_server.reloadOnChange": true,
+  "reason_language_server.show_debug_errors": true
+}
