@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@aantron/repromise@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@aantron/repromise/-/repromise-0.6.1.tgz#5ad99cba57f5a4a88783b833ef2a3d2d9dfdba2f"
-  integrity sha512-dHWAWTlpPQCZcN9sCOzljOcMCD7ipQgLE1NOA3CszUxS3FKCl7muave235AX/waV5V6KqRFscg0iQVz2phZTNA==
-
 "@baransu/graphql_ppx_re@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@baransu/graphql_ppx_re/-/graphql_ppx_re-0.3.1.tgz#9b0741bfd4652ff7f33e2d75991517fc67e5ff03"
@@ -785,10 +780,10 @@ bs-fetch@^0.5.0:
   resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.5.0.tgz#6913b1d1ddfa0b0a4b832357854e9763d61d4b28"
   integrity sha512-cGjwRpyNcIaX+p2ssy/38zs7BM/miKNgmOR3NEhxKFete5mR05JcvjuV4raG89oGCG281SU1b56TTAKmf9VCug==
 
-bs-platform@^5.0.6:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-5.2.1.tgz#3f76f6d4f4c7255296375a8104c8be332770b691"
-  integrity sha512-3ISP+RBC/NYILiJnphCY0W3RTYpQ11JGa2dBBLVug5fpFZ0qtSaL3ZplD8MyjNeXX2bC7xgrWfgBSn8Tc9om7Q==
+bs-platform@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-7.0.1.tgz#1d7b0ef6088b998dceee5db74a7cd8f01c20a3bd"
+  integrity sha512-UjStdtHhbtC/l6vKJ1XRDqrPk7rFf5PLYHtRX3akDXEYVnTbN36z0g4DEr5mU8S0N945e33HYts9x+i7hKKpZQ==
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -4251,6 +4246,11 @@ readdirp@^2.0.0, readdirp@^2.2.1:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+reason-promise@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/reason-promise/-/reason-promise-1.0.2.tgz#22b9bb4097ce511190182b948aef11427d5b8b86"
+  integrity sha512-j8DWV+71wNEKQmyW6zBOowIZq1Qec5CDWyLI37BvgOmAZgRFGFQ1MaJnbhqDe3JsYmaGyqdNMmpCJLl9EDbDAg==
 
 reason-react@^0.7.0:
   version "0.7.0"

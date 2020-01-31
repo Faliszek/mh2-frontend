@@ -22,25 +22,25 @@ let useQuery = (~query, ~parser, ~variables) => {
 
   React.useEffect1(
     () => {
-      Fetch.fetchWithInit(uri, request)
+      (Fetch.fetchWithInit(uri, request)
       |> Js.Promise.then_(data => {
            setResult(_ => {...result, loading: true});
            Fetch.Response.json(data);
-         })
-      |> Repromise.Rejectable.fromJsPromise
-      |> Repromise.Rejectable.andThen(data => {
+         }))
+      ->Promise.Js.fromBsPromise
+      ->Promise.Js.flatMap(data => {
            let data =
              Js.Json.decodeObject(data)
              ->Option.flatMap(d => Js.Dict.get(d, "data"))
              ->Option.map(parser);
            setResult(_ => {data, loading: false, error: None});
-           Repromise.Rejectable.resolved(data);
+           Promise.Js.resolved(data);
          })
-      |> Repromise.Rejectable.catch(e => {
+      ->Promise.Js.catch(e => {
            setResult(_ => {...result, loading: false, error: Some("error")});
-           Repromise.Rejectable.rejected(e);
+           Promise.Js.rejected(e);
          })
-      |> ignore;
+      ->ignore;
       None;
     },
     [||],
