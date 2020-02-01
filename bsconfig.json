@@ -13,8 +13,8 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["reason-react", "@aantron/repromise", "bs-fetch"],
-  "ppx-flags": ["@baransu/graphql_ppx_re/ppx"],
+  "bs-dependencies": ["reason-react", "reason-promise", "bs-fetch"],
+  "ppx-flags": ["@baransu/graphql_ppx_re/ppx6"],
   "warnings": {
     "error": "+101"
   },
